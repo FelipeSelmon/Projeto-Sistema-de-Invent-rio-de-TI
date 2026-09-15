@@ -1,0 +1,61 @@
+programa
+
+{
+	inteiro saida = 1
+	
+	inteiro resposta 
+
+	cadeia v[3]
+
+	inteiro m[3][2]
+
+	funcao inicio()
+
+	{
+		enquanto (saida == 1 )
+		{
+		
+
+		escreva("1: Emitir relatorio\n")
+
+		escreva("2: Registrar Recebimento\n")
+
+		escreva("3: Encerrar sistema\n")
+
+		leia (resposta)
+
+		escolha (resposta)
+
+		{
+
+			caso 1:
+
+			{
+			limpa()
+			escreva("1\n")
+			
+			
+			pare
+			}
+
+			caso 2:
+
+			{
+				limpa()
+				escreva("2\n")
+			pare
+			}
+
+			caso 3:
+
+			{
+			saida = saida + 1
+			limpa()
+			}
+
+		}
+		}
+	}
+
+}
+ 
