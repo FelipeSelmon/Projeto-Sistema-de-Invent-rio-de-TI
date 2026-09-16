@@ -1,13 +1,17 @@
 programa
-
+// pt 1 - grupo: Felipe, Davi possas, Samuel, João Victor
 {
 	inteiro saida = 1
 	
 	inteiro resposta 
 
-	cadeia v[3]
+	cadeia v[3] ={ "notebook", "monitor", "teclado"}
 
-	inteiro m[3][2]
+	inteiro m[3][2] = {
+	{5, 7}, //notebook
+	{9, 7}, // monitor
+	{11, 10} // teclado
+}
 
 	funcao inicio()
 
@@ -32,7 +36,19 @@ programa
 
 			{
 			limpa()
+// pt2 - letícia, luiza, angélica, isabella (relatorio)
+		para (inteiro i = 0; i < 3; i++)
+			{
+				escreva("categoria: ", i, " | ", v[i], " | Atual: ", m[i][0], " | Minimo: ", m[i][1])
+				
+				se (m[i][0] < m[i][1])
+				{
+					escreva(" * Estoque pendente ")
+				}
+				escreva("\n")
+			}
 			escreva("1\n")
+
 			
 			
 			pare
@@ -42,6 +58,31 @@ programa
 
 			{
 				limpa()
+// pt2 - letícia, luiza, angélica, isabella (recebimento)
+inteiro numero, quantidade
+
+				escreva("Digite o numero: ")
+				leia(numero)
+
+				se (numero >= 0 e numero<= 2)
+				{
+					escreva("Digite a quantidade recebida: ")
+					leia(quantidade)
+
+					se (quantidade > 0)
+					{
+						m[numero][0] = m[numero][0] + quantidade
+						escreva("Estoque editado.\n")
+					}
+					senao
+					{
+						escreva("Quantidade não valida.\n")
+					}
+				}
+				senao
+				{
+					escreva("número não disponivel.\n")
+				}
 				escreva("2\n")
 			pare
 			}
